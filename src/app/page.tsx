@@ -1,3 +1,10 @@
+"use client";
+import Header from "@/components/header/header";
+
 export default function Home() {
-	return <h1>Hello i&apos;m Next.js starter</h1>;
+	return (
+		<div className="flex">
+			<Header />
+		</div>
+	);
 }
