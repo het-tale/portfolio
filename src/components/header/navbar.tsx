@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar({ isMobile }: Readonly<{ isMobile: boolean }>) {
 	const sections: { name: string; link: string }[] = [
-		{ name: "About", link: "/" },
-		{ name: "Projects", link: "/" },
+		{ name: "About", link: "#about" },
+		{ name: "Projects", link: "#projects" },
 		{ name: "Blog", link: "/" },
 		{ name: "Contact", link: "/" }
 	];
