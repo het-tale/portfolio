@@ -1,6 +1,7 @@
 "use client";
 import Header from "@/components/header/header";
 import Hero from "@/components/hero/hero";
+import Projects from "@/components/projects/projects";
 
 export default function Home() {
 	return (
@@ -8,6 +9,7 @@ export default function Home() {
 			<Header />
 			<main className="flex flex-col">
 				<Hero />
+				<Projects />
 			</main>
 		</div>
 	);

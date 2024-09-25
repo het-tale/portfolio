@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Hasnaa Et-taleby | Frontend Developer",
-	description: "Personal portfolio of Hasnaa Et-taleby, a frontend developer."
+	description: "Personal portfolio of Hasnaa Et-taleby, a frontend developer.",
+	icons: { icon: "/logo.svg" }
 };
 
 export default function RootLayout({
