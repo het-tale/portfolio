@@ -9,12 +9,12 @@ export default function Home() {
 	return (
 		<div className="flex flex-col dark:text-white w-full">
 			<Header />
-			<main className="flex flex-col md:gap-36 w-full">
+			<main className="flex flex-col gap-6  w-full">
 				<Hero />
 				<Projects />
 				<Contact />
-				<Footer />
 			</main>
+			<Footer />
 		</div>
 	);
 }

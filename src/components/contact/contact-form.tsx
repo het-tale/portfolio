@@ -62,7 +62,7 @@ export default function ContactForm() {
 	}
 
 	return (
-		<Card className="w-full md:w-[50%] mx-auto bg-transparent">
+		<Card className="w-full md:w-[50%] px-auto bg-transparent h-full">
 			<CardHeader></CardHeader>
 			<CardContent>
 				<Form {...form}>
