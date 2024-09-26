@@ -6,7 +6,11 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+	subsets: ["latin"],
+	display: "swap",
+	preload: true
+});
 
 export const metadata: Metadata = {
 	title: "Hasnaa Et-taleby | Frontend Developer",
