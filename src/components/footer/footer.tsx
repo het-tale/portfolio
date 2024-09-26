@@ -9,7 +9,8 @@ const ThemeAwareContent = () => {
 
 	return (
 		<span>
-			{currentTheme === "dark" ? <>&#128420;</> : <>&#129293;</>} and &#9749;
+			{currentTheme === "dark" ? <>&#128420;</> : <>&#129293;</>} and{" "}
+			<span className="mr-1">&#9749;</span>
 		</span>
 	);
 };

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
 	NavigationMenu,
 	NavigationMenuItem,
@@ -25,16 +24,15 @@ export default function Navbar({ isMobile }: Readonly<{ isMobile: boolean }>) {
 						className={cn(isMobile ? "self-start" : "")}
 						key={index}
 					>
-						<Link href={section.link} legacyBehavior passHref>
-							<NavigationMenuLink
-								className={cn(
-									navigationMenuTriggerStyle(),
-									"hover:bg-transparent dark:hover:text-white bg-transparent font-normal dark:text-white focus:bg-transparent"
-								)}
-							>
-								{section.name}
-							</NavigationMenuLink>
-						</Link>
+						<NavigationMenuLink
+							href={section.link}
+							className={cn(
+								navigationMenuTriggerStyle(),
+								"hover:bg-transparent dark:hover:text-white bg-transparent font-normal dark:text-white focus:bg-transparent"
+							)}
+						>
+							{section.name}
+						</NavigationMenuLink>
 					</NavigationMenuItem>
 				))}
 			</NavigationMenuList>

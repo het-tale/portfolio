@@ -1,7 +1,7 @@
 export default function Introduction() {
 	return (
 		<div className="flex flex-col md:w-[50%] w-full justify-center">
-			<h1 className="text-4xl md:mb-2 font-semibold mb-4">
+			<h1 className="text-3xl md:text-4xl md:mb-2 font-semibold mb-4">
 				I&apos;m Hasnaa Et-taleby
 			</h1>
 			<p className="leading-loose md:leading-8 text-lg font-normal">
