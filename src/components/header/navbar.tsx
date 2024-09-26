@@ -13,7 +13,7 @@ export default function Navbar({ isMobile }: Readonly<{ isMobile: boolean }>) {
 		{ name: "About", link: "#about" },
 		{ name: "Projects", link: "#projects" },
 		{ name: "Blog", link: "/" },
-		{ name: "Contact", link: "/" }
+		{ name: "Contact", link: "#contact" }
 	];
 	return (
 		<NavigationMenu className={cn(isMobile ? "flex flex-col w-full my-8" : "")}>

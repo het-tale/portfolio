@@ -18,6 +18,8 @@ import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
+import emailjs from "@emailjs/browser";
+
 const formSchema = z.object({
 	fullname: z.string(),
 	email: z.string().email({ message: "Invalid email address" }),
@@ -36,14 +38,29 @@ export default function ContactForm() {
 			message: ""
 		}
 	});
-	function onSubmit(values: z.infer<typeof formSchema>) {
+	async function onSubmit(values: z.infer<typeof formSchema>) {
 		const { fullname, email, message } = values;
-		toast({
-			title: "Message sent",
-			description: `with ${fullname} at ${email} about ${message}`,
-			className: "bg-green-500 text-white"
-		});
+		try {
+			await emailjs.send(
+				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+				{ fullname: fullname, user_email: email, message: message },
+				{ publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "" }
+			);
+			toast({
+				title: "Email sent",
+				description: "Your email has been sent successfully",
+				variant: "default"
+			});
+		} catch (error: any) {
+			toast({
+				title: "Unable to send email",
+				description: `The following error occurred: ${error.message}`,
+				variant: "destructive"
+			});
+		}
 	}
+
 	return (
 		<Card className="w-full md:w-[50%] mx-auto bg-transparent">
 			<CardHeader></CardHeader>
@@ -57,7 +74,11 @@ export default function ContactForm() {
 								<FormItem>
 									<FormLabel>Your full name</FormLabel>
 									<FormControl className="bg-transparent">
-										<Input placeholder="full name" {...field} />
+										<Input
+											placeholder="full name"
+											{...field}
+											className="dark:border-neutral-50 dark:border-opacity-50"
+										/>
 									</FormControl>
 
 									<FormMessage />
@@ -75,6 +96,7 @@ export default function ContactForm() {
 											placeholder="youremail@example.com"
 											{...field}
 											type="email"
+											className="dark:border-neutral-50 dark:border-opacity-50"
 										/>
 									</FormControl>
 
@@ -92,8 +114,8 @@ export default function ContactForm() {
 									<FormControl className="bg-transparent">
 										<Textarea
 											placeholder="Type here your message"
-											className="resize-none"
 											{...field}
+											className="resize-none dark:border-neutral-50 dark:border-opacity-50"
 										/>
 									</FormControl>
 
