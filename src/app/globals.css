@@ -66,4 +66,30 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+	/* Container styles */
+	.logo-container {
+		perspective: 1000px; /* Enables the 3D effect */
+	}
+
+	/* Front side of the SVG (initially visible) */
+	.front {
+		backface-visibility: hidden;
+	}
+
+	/* Back side of the SVG (hidden initially) */
+	.back {
+		backface-visibility: hidden;
+		transform: rotateY(180deg);
+	}
+
+	/* Flip animation on hover */
+	.logo-container:hover .front {
+		transform: rotateY(180deg);
+		opacity: 0;
+	}
+
+	.logo-container:hover .back {
+		opacity: 1;
+		transform: rotateY(360deg);
+	}
 }
