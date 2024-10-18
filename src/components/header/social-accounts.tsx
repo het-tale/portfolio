@@ -18,11 +18,6 @@ export default function SocialAccounts() {
 			link: "https://github.com/het-tale"
 		},
 		{
-			name: "Twitter",
-			icon: <Icons.twitter className="w-6 h-6" />,
-			link: "https://x.com/het_tale"
-		},
-		{
 			name: "LinkedIn",
 			icon: <Icons.linkedin className="w-6 h-6" />,
 			link: "https://www.linkedin.com/in/hasnaa-et-taleby/"
