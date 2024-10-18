@@ -12,9 +12,9 @@ export default function Projects() {
 			title: "AlgoVisualizer",
 			description:
 				"This project involved designing and building a web application that allows users to visualize various sorting algorithms in real-time, providing a visual representation of how each algorithm functions and how it sorts data.",
-			tags: ["React", "Algorithms", "D3.js"],
+			tags: ["Next.js", "Algorithms"],
 			image: "/undraw_visual_data_re_mxxo.svg",
-			link: "/"
+			link: "https://algo-visualizer-black.vercel.app/"
 		},
 		{
 			title: "TrevorUi",
