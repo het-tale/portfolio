@@ -12,9 +12,9 @@ export default function Projects() {
 			title: "AlgoVisualizer",
 			description:
 				"This project involved designing and building a web application that allows users to visualize various sorting algorithms in real-time, providing a visual representation of how each algorithm functions and how it sorts data.",
-			tags: ["React", "Algorithms", "D3.js"],
+			tags: ["Next.js", "Algorithms"],
 			image: "/undraw_visual_data_re_mxxo.svg",
-			link: "/"
+			link: "https://algo-visualizer-black.vercel.app/"
 		},
 		{
 			title: "TrevorUi",
@@ -22,7 +22,7 @@ export default function Projects() {
 				"UI library of reusable components using Next.js. This library aims to streamline the development process by providing a consistent and customizable set of UI elements that can be easily integrated into various web applications.",
 			tags: ["Next.js", "Storybook", "npm"],
 			image: "/undraw_design_components_9vy6.svg",
-			link: "/"
+			link: "https://github.com/het-tale/trevor-ui"
 		},
 		{
 			title: "Ft_transcendence",
@@ -30,7 +30,7 @@ export default function Projects() {
 				"A dynamic full-stack web application using React.js and Nest.js, providing users with a comprehensive platform for engaging in multiplayer ping pong games and fostering social interactions.",
 			tags: ["React", "TailwindCSS"],
 			image: "/undraw_gaming_re_cma2.svg",
-			link: "/"
+			link: "https://github.com/het-tale/ft_transcendence"
 		},
 		{
 			title: "Webserv",
@@ -38,7 +38,7 @@ export default function Projects() {
 				"This project involved designing and building a high-performance server capable of handling HTTP requests, parsing headers, and efficiently serving static and dynamic content.",
 			tags: ["HTTPS", "NGINX", "Network"],
 			image: "/undraw_server_cluster_jwwq.svg",
-			link: "/"
+			link: "https://github.com/het-tale/webserver"
 		},
 		{
 			title: "Inception",
@@ -46,7 +46,7 @@ export default function Projects() {
 				"This project involved setting up and running Nginx, MariaDB as the database management system, and WordPress as the content management system, each encapsulated within separate Docker containers",
 			tags: ["Docker", "Devops", "containerization"],
 			image: "/undraw_container_ship_re_alm4.svg",
-			link: "/"
+			link: "https://github.com/het-tale/42_inception"
 		}
 	];
 	return (
