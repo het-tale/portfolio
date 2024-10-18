@@ -18,7 +18,7 @@ export default function Hero() {
 				<Introduction />
 				<div className="flex gap-4 mt-6">
 					<a
-						href="/Hasnaa_Ettaleby_Resume.pdf"
+						href="/Hasnaa_Et-taleby_Resume.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md transition-colors"
