@@ -5,6 +5,7 @@ import ReactQueryProvider from "@/providers/react-query-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
 						disableTransitionOnChange
 					>
 						{children}
+						<Analytics />
 					</ThemeProvider>
 				</ReactQueryProvider>
 				<Toaster />
