@@ -8,21 +8,29 @@ export default function Projects() {
 		image: string;
 		link: string;
 	}[] = [
+		// {
+		// 	title: "AlgoVisualizer",
+		// 	description:
+		// 		"This project involved designing and building a web application that allows users to visualize various sorting algorithms in real-time, providing a visual representation of how each algorithm functions and how it sorts data.",
+		// 	tags: ["Next.js", "Algorithms"],
+		// 	image: "/undraw_visual_data_re_mxxo.svg",
+		// 	link: "https://algo-visualizer-black.vercel.app/"
+		// },
+		// {
+		// 	title: "TrevorUi",
+		// 	description:
+		// 		"UI library of reusable components using Next.js. This library aims to streamline the development process by providing a consistent and customizable set of UI elements that can be easily integrated into various web applications.",
+		// 	tags: ["Next.js", "Storybook", "npm"],
+		// 	image: "/undraw_design_components_9vy6.svg",
+		// 	link: "https://github.com/het-tale/trevor-ui"
+		// },
 		{
-			title: "AlgoVisualizer",
+			title: "PortfolioHub",
 			description:
-				"This project involved designing and building a web application that allows users to visualize various sorting algorithms in real-time, providing a visual representation of how each algorithm functions and how it sorts data.",
-			tags: ["Next.js", "Algorithms"],
+				"Full‑stack CMS powering personal portfolio content with authenticated CRUD, and image uploads",
+			tags: ["React", "FastAPI", "PostgreSQL"],
 			image: "/undraw_visual_data_re_mxxo.svg",
-			link: "https://algo-visualizer-black.vercel.app/"
-		},
-		{
-			title: "TrevorUi",
-			description:
-				"UI library of reusable components using Next.js. This library aims to streamline the development process by providing a consistent and customizable set of UI elements that can be easily integrated into various web applications.",
-			tags: ["Next.js", "Storybook", "npm"],
-			image: "/undraw_design_components_9vy6.svg",
-			link: "https://github.com/het-tale/trevor-ui"
+			link: "https://github.com/het-tale/portfolio-cms"
 		},
 		{
 			title: "Ft_transcendence",

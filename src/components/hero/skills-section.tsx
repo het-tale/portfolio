@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 const skills = [
 	"React",
 	"TypeScript",
-	"Next.js",
+	"FastAPI",
 	"Tailwind CSS",
 	"JavaScript",
 	"HTML",
 	"CSS",
 	"Git",
-	"Jest"
+	"PostgeSQL",
+	"SQLModel",
+	"Docker"
 ];
 
 export default function SkillsSection() {
