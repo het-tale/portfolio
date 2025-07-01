@@ -2,12 +2,12 @@ import Introduction from "./introduction";
 import SkillsSection from "./skills-section";
 
 export default function Hero() {
-	function scrollToSection(section: string) {
-		const element = document.querySelector(section);
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
-	}
+	// function scrollToSection(section: string) {
+	// 	const element = document.querySelector(section);
+	// 	if (element) {
+	// 		element.scrollIntoView({ behavior: "smooth" });
+	// 	}
+	// }
 
 	return (
 		<section
@@ -16,7 +16,7 @@ export default function Hero() {
 		>
 			<div className="flex flex-col items-center max-w-4xl">
 				<Introduction />
-				<div className="flex gap-4 mt-6">
+				{/* <div className="flex gap-4 mt-6">
 					<a
 						href="/Hasnaa_Et-taleby_Resume.pdf"
 						target="_blank"
@@ -31,7 +31,7 @@ export default function Hero() {
 					>
 						Get in Touch
 					</button>
-				</div>
+				</div> */}
 				<SkillsSection />
 			</div>
 		</section>
