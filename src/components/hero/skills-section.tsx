@@ -11,7 +11,9 @@ const skills = [
 	"Git",
 	"PostgeSQL",
 	"SQLModel",
-	"Docker"
+	"Docker",
+	"API Integrations",
+	"REST API"
 ];
 
 export default function SkillsSection() {
