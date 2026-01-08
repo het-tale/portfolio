@@ -7,7 +7,7 @@ export default function Introduction() {
 					Hasnaa Et-taleby
 				</span>
 			</h1>
-			<p className="text-lg md:text-xl text-gray-300 leading-loose max-w-4xl">
+			<p className="text-lg md:text-xl text-black-300 leading-loose max-w-4xl">
 				I&apos;m a Moroccan Software Engineer who loves building stuff from
 				scratch. Full-stack is my thing—databases, APIs, interfaces, the whole
 				package. I enjoy solving technical puzzles and making systems that
