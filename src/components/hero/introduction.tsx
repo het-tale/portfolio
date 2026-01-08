@@ -7,16 +7,13 @@ export default function Introduction() {
 					Hasnaa Et-taleby
 				</span>
 			</h1>
-			<p className="leading-loose md:leading-8 text-lg font-normal">
-				I&apos;m a Moroccan Software Engineer who genuinely enjoys building
-				stuff from the ground up. Full-stack work is my thing—whether I&apos;m
-				setting up databases, writing APIs, or building the interface people
-				actually see. I like the puzzle of making systems work well and scale
-				properly. Here&apos;s the thing though: even with all the AI tools out
-				there, I still grab pen and paper when I need to think through a
-				problem. There&apos;s something about sketching things out that just
-				works. And coffee? Non-negotiable. Good coffee makes tackling tough
-				challenges way more enjoyable.
+			<p className="text-lg md:text-xl text-gray-300 leading-loose max-w-4xl">
+				I&apos;m a Moroccan Software Engineer who loves building stuff from
+				scratch. Full-stack is my thing—databases, APIs, interfaces, the whole
+				package. I enjoy solving technical puzzles and making systems that
+				actually scale. Even with all the AI tools around, I still grab pen and
+				paper to think through problems. Oh, and coffee? Essential. It makes
+				tackling challenges way more fun.
 			</p>
 		</div>
 	);
